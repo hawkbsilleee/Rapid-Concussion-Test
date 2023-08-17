@@ -14,22 +14,39 @@ end = 0
 def index():
     return render_template('index.html')
 
-@app.route('/anim.html')
+@app.route('/anim-t.html')
 @auth_required
-def animation():
+def animation_t():
         global random_key
         random_key = random.randint(1,4)
         # time.sleep(2)
         global start 
         start = timer()
         if random_key == 1:
-            return render_template('anim1.html')
+            return render_template('anim1.html', css_template='stylesheet1')
         if random_key == 2:
-            return render_template('anim2.html')
+            return render_template('anim2.html', css_template='stylesheet1')
         if random_key == 3:
-            return render_template('anim3.html')
+            return render_template('anim3.html', css_template='stylesheet1')
         if random_key == 4:
-            return render_template('anim4.html')
+            return render_template('anim4.html', css_template='stylesheet1')
+        
+@app.route('/anim-c.html')
+@auth_required
+def animation_c():
+        global random_key
+        random_key = random.randint(1,4)
+        # time.sleep(2)
+        global start 
+        start = timer()
+        if random_key == 1:
+            return render_template('anim1.html', css_template='stylesheet2')
+        if random_key == 2:
+            return render_template('anim2.html', css_template='stylesheet2')
+        if random_key == 3:
+            return render_template('anim3.html', css_template='stylesheet2')
+        if random_key == 4:
+            return render_template('anim4.html', css_template='stylesheet2')
 
 @app.route('/results1.html')
 @auth_required

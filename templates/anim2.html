@@ -5,7 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge"
         <title> </title>
-        <link rel="stylesheet" href="../static/css/style.css">
+        {% if css_template == 'stylesheet1' %}
+          <link rel="stylesheet" href="../static/css/style.css">
+        {% endif %}
+        {% if css_template == 'stylesheet2' %}
+          <link rel="stylesheet" href="../static/css/second_style.css">
+        {% endif %}
     </head>
     <body>
         <div class="everything">

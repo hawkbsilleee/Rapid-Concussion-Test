@@ -1,0 +1,264 @@
+*
+{
+    margin: 0;
+    padding: 0; 
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(172, 172, 172);
+}
+.container
+{
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .box
+{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.container .box span
+{
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 50%;
+    /* animation: animate2 4s linear infinite, border_animation1 36s; */
+
+    border: 5px solid gray; 
+    animation: animate2 4s linear infinite;
+    animation-delay: calc(-0.2s * var(--i));
+}
+.container .dot 
+{
+    position: absolute;
+    height: 35px;
+    width: 35px; 
+    background-color: white;
+    border-radius: 50%;
+}
+
+.everything {
+    position: absolute;
+}
+
+#cover_box1 {
+    display: block;
+    position: absolute;
+    /* bottom: 300px; */
+    right: 250px;
+    background-color: rgb(172, 172, 172);
+    /* background-color: rgb(201, 250, 201); */
+    height:800px;
+    width:500px;
+}
+
+#cover_box2 {
+    display: block;
+    position: absolute;
+    top: 300px;
+    background-color: rgb(172, 172, 172);
+    /* background-color: rgb(201, 250, 201); */
+    height:400px;
+    width:800px;
+}
+
+#cover_box3 {
+    display: block;
+    position: absolute;
+    left: 250px;
+    background-color: rgb(172, 172, 172);
+    height:800px;
+    width:500px;
+}
+
+#cover_box4 {
+    display: block;
+    position: absolute;
+    bottom: 300px;
+    background-color: rgb(172, 172, 172);
+    /* background-color: rgb(201, 250, 201); */
+    height:400px;
+    width:800px;
+}
+
+#cover_box5 {
+    display: block;
+    position: absolute;
+    right: 250px;
+    background-color: rgb(172, 172, 172);
+    height:800px;
+    width:500px;
+}
+
+#trans_cover {
+    display: block;
+    position: absolute;
+    animation: trans_animation 36s linear; 
+    height:800px;
+    width:800px;
+}
+
+p 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+}
+
+.home-page
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.button
+{
+    color: black; 
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    display: inline-block;
+    font-size: 20px;
+    border: solid 1px black; 
+}
+
+#stop-button1 
+{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    height:400px;
+    width:400px;
+    left: 250px;
+    bottom: 300px; 
+}
+
+#stop-button2 
+{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    height:400px;
+    width:400px;
+    right: 250px;
+    bottom: 300px; 
+}
+
+#stop-button3 
+{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    height:400px;
+    width:400px;
+    right: 250px;
+    top: 300px; 
+}
+
+#stop-button4 
+{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    height:400px;
+    width:400px;
+    left: 250px;
+    top: 300px; 
+}
+
+.results-table
+{
+    display: block;
+    position: absolute;
+    background-color: white;
+    height: 300px;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+.results-table h1
+{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    padding: 20px; 
+}
+
+.results-table .content h2
+{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 5px; 
+}
+
+.results-table .content .results-buttons 
+{
+    position: relative;
+    display: flex; 
+    padding: 40px; 
+    justify-content: center;
+}
+
+.results-table .content .results-buttons a
+{
+    color: black; 
+    padding: 8px 20px;
+    text-decoration: none;
+    background-color: white;
+    display: inline-block;
+    font-size: 20px;
+    border: solid 1px black;
+}
+
+@keyframes trans_animation {
+
+    0%
+    {
+        background-color: rgba(172, 172, 172, 1);
+    }
+    75%
+    {
+        background-color: rgba(172, 172, 172, 0.9);
+    }
+    100%
+    {
+        background-color: rgba(172, 172, 172, 0);
+    }
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        width: 800px;
+        height: 800px;
+        opacity: 0;     
+    }
+    20%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 1; 
+    }
+}

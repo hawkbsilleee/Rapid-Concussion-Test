@@ -3,7 +3,7 @@ Flask application hosting a prototype rapid concussion test using varying sine w
 
 There are two testing modes, thickness test and contrast test, which display sine patterns that vary in thickness or contrast over time. The user should focus on the center target which flashes with random numbers. As soon as the user sees the sinusoidal wave pattern they should click on the quadrant where they see it. 
 
-<img width="1440" alt="Screen Shot 2024-11-22 at 11 51 40 AM" src="https://github.com/user-attachments/assets/4bf2f022-74e7-40a9-9835-85f795d674bb">
+<img width="256" alt="Screen Shot 2024-11-22 at 11 51 40 AM" src="https://github.com/user-attachments/assets/4bf2f022-74e7-40a9-9835-85f795d674bb">
 
 <img width="1439" alt="Screen Shot 2024-11-22 at 11 52 49 AM" src="https://github.com/user-attachments/assets/59470e5f-1565-4c4d-91bb-629ea36d4dc0">
 
